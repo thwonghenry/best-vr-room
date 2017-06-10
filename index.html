@@ -2,9 +2,19 @@
     <head>
         <title>Best VR Room</title>
         <script src="//cdn.rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
+        <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.3/dist/aframe-extras.min.js"></script>
     </head>
     <body>
         <a-scene>
+            <a-entity
+                camera="userHeight: 1.6"
+                universal-controls="movementAcceleration:20"
+                kinematic-body="radius:0.25"
+                position="4.620 1.600 7.585"
+                rotation="-11.918 -1.719 0.000"
+            ></a-entity>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="40" height="40" visible="false" static-body></a-plane>
+            <a-box position="5.954 0.354 0.780" depth="0.460" height="0.750" width="1.190" visible="false" static-body></a-box>
             <a-collada-model
                 src="/room.dae"
                 scale="0.01 0.01 0.01"
